@@ -1,0 +1,12 @@
+.categories-layout-container {
+  display: flex;
+}
+
+.categories-column {
+  flex: 1;
+  flex-direction: column;
+}
+
+.outlet-container {
+  margin-left: 20px; /* Adjust as needed */
+}

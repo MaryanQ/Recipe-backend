@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { getCategories } from "../services/apiFacade";
 
 export const Categories = () => {
@@ -15,7 +16,7 @@ export const Categories = () => {
         {categories?.map((category) => (
           <li key={category}>
             {category}
-            {/* <Link to={`/recipes?category=${category}`}>{category}</Link> */}
+            <Link to={`/recipes?category=${category}`}>{category}</Link>
           </li>
         ))}
       </ul>
